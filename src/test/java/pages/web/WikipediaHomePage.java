@@ -25,7 +25,8 @@ public class WikipediaHomePage {
         return this;
     }
 
-    public void clickEnglish() {
+    public EnWikipediaPage goToEnglish() {
         wait.until(ExpectedConditions.elementToBeClickable(englishLink)).click();
+        return new EnWikipediaPage(driver).waitUntilLoaded();
     }
 }
