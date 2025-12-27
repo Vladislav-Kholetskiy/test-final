@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Web UI Tests">
+    <test name="Wikipedia Web">
+        <classes>
+            <class name="tests.web.WikipediaOpenTest"/>
+            <class name="tests.web.WikipediaMainPageTest"/>
+            <class name="tests.web.WikipediaEnglishSearchTest"/>
+            <class name="tests.web.WikipediaSearchResultsTest"/>
+        </classes>
+    </test>
+</suite>
